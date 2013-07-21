@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity" >
+    
+	<Button
+       	    android:id="@+id/hide"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:padding="5dp"
+       	    android:text="Hide" />
+
+   <RelativeLayout
+       android:id="@+id/overlay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:background="@android:color/darker_gray"
+       android:visibility="visible" >
+       
+       	<TextView
+       	    android:id="@+id/messagc"
+       	    android:layout_width="match_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_marginTop="10dp"
+       	    android:gravity="center"
+       	    android:text="@string/alert_message"
+       	    android:textColor="@android:color/white"
+       	    android:textSize="18sp" />
+
+       	<Button
+       	    android:id="@+id/add_place"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignBaseline="@+id/tutorial"
+       	    android:layout_alignBottom="@+id/tutorial"
+       	    android:layout_alignParentRight="true"
+       	    android:layout_marginRight="22dp"
+       	    android:padding="8dp"
+       	    android:text="Add Places" />
+
+       	<Button
+       	    android:id="@+id/tutorial"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignParentLeft="true"
+       	    android:layout_below="@+id/messagc"
+       	    android:layout_marginLeft="28dp"
+       	    android:layout_marginTop="30dp"
+       	    android:padding="8dp"
+       	    android:text="Tutorial" />
+
+       	<View
+       	    android:layout_width="match_parent"
+       	    android:layout_height="0.4dp"
+       	    android:layout_alignParentLeft="true"
+       	    android:layout_below="@+id/messagc"
+       	    android:layout_marginTop="22dp"
+       	    android:background="@android:color/black" />
+
+   </RelativeLayout>
+
+</RelativeLayout>
